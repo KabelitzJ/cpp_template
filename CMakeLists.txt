@@ -24,9 +24,9 @@ add_executable(${PROJECT_NAME})
 target_sources(
   ${PROJECT_NAME}
   PUBLIC
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/cpp_template.hpp"
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/main.hpp"
   PRIVATE
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/cpp_template.cpp"
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/main.cpp"
 )
 
 target_include_directories(
