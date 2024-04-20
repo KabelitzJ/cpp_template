@@ -1,5 +1,26 @@
 # C++ project template using CMake
 
+## Change project name
+
+Change the following line in `CMakeLists.txt:7` file:
+
+```cmake
+project(cpp_template VERSION 0.1.0 LANGUAGES CXX)
+```
+to
+
+```cmake
+project(YOUR_NAME VERSION 0.1.0 LANGUAGES CXX)
+```
+
+# Change license
+
+Change your name in the `LICENSE` file:
+
+```text
+Copyright (c) 2024 <your name>
+```
+
 ## Generate project
 
 ```bash
@@ -17,18 +38,7 @@ cmake --build .\build\
 ```bash
 .\build\bin\cpp_template.exe
 ```
-## Change executable name
 
-Change the following line in `CMakeLists.txt:7` file:
-
-```cmake
-project(cpp_template VERSION 0.1.0 LANGUAGES CXX)
-```
-to
-
-```cmake
-project(YOUR_NAME VERSION 0.1.0 LANGUAGES CXX)
-```
 ## Adding new source files
 
 Add the following line in `CMakeLists.txt:24` file:
