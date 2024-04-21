@@ -1,3 +1,7 @@
+[![Static Badge](https://img.shields.io/badge/Language-C++20-blue?logo=c%2B%2B&logoColor=blue)](https://isocpp.org/)
+[![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-red?logo=git)](https://github.com/KabelitzJ/sandbox/releases/tag/v0.1.0)
+[![Static Badge](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=green)](https://opensource.org/licenses/MIT)
+
 # C++ project template using CMake
 
 ## 📑 Table of contents
@@ -82,7 +86,6 @@ Change your name in the `LICENSE` file:
 Copyright (c) 2024 <your_name>
 ```
 
-or change the license to another one. For a list of open source licenses, visit the [open source initiative](https://opensource.org/licenses).
 ## 5. ⚙️ Generate project
 
 ```bash
