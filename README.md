@@ -17,6 +17,7 @@
 ## Description
 
 This is a simple C++ project template using CMake. It is a good starting point for new projects.
+It provides a step-by-step guide on how to generate, build, and run a C++ project using CMake inclusing any prerequisites needed.
 
 ## Prerequisites 
 
