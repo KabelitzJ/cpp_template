@@ -1,35 +1,35 @@
 # C++ project template using CMake
 
-## Table of contents
-- [Description](#description)
-- [Prerequisites](#prerequisites)
-  - [Install CMake](#install-cmake)
-  - [Install MinGW using MSYS2](#install-mingw-using-msys2)
-    - [Install g++ toolchain](#install-g-toolchain)
-    - [Update compiler path](#update-compiler-path)
-- [Change project name](#change-project-name)
-- [Change license](#change-license)
-- [Generate project](#generate-project)
-- [Build project](#build-project)
-- [Run project](#run-project)
-- [Adding new source files](#adding-new-source-files)
+## 📑 Table of contents
+- [1. 📄 Description](#1--description)
+- [2. 🛠️ Prerequisites](#2-️-prerequisites)
+  - [2.1 Install CMake](#21-install-cmake)
+  - [2.2 Install MinGW using MSYS2](#22-install-mingw-using-msys2)
+    - [2.2.1 Install g++ toolchain](#221-install-g-toolchain)
+    - [2.2.2 Update compiler path](#222-update-compiler-path)
+- [3. ✏️ Change project name](#3-️-change-project-name)
+- [4. ⚖️ Change license](#4-️-change-license)
+- [5. ⚙️ Generate project](#5-️-generate-project)
+- [6. 🏗️ Build project](#6-️-build-project)
+- [7. ▶️ Run project](#7-️-run-project)
+- [8. 📁 Adding new source files](#8--adding-new-source-files)
 
-## Description
+## 1. 📄 Description
 
 This is a simple C++ project template using CMake. It is a good starting point for new projects.
 It provides a step-by-step guide on how to generate, build, and run a C++ project using CMake inclusing any prerequisites needed.
 
-## Prerequisites 
+## 2. 🛠️ Prerequisites 
 
-### Install CMake
+### 2.1 Install CMake
 
 Download and install CMake from the official website [https://cmake.org/download/](https://cmake.org/download/) and follow the instructions.
 
-### Install MinGW using MSYS2
+### 2.2 Install MinGW using MSYS2
 
 Download and install MSYS2 from the official website [https://www.msys2.org/](https://www.msys2.org/) and follow the instructions.
 
-#### Install g++ toolchain
+#### 2.2.1 Install g++ toolchain
 
 Open the MSYS2 terminal and run the following command:
 
@@ -37,7 +37,7 @@ Open the MSYS2 terminal and run the following command:
 pacman -S mingw-w64-x86_64-toolchain
 ```
 
-#### Update compiler path
+#### 2.2.2 Update compiler path
 
 Inside `.vscode/c_cpp_properties.json` file, update the `compilerPath` property to the path where the `g++.exe` is located. For example:
 
@@ -45,7 +45,7 @@ Inside `.vscode/c_cpp_properties.json` file, update the `compilerPath` property 
 "compilerPath": "D:/msys64/mingw64/bin/g++.exe",
 ```
 
-## Change project name
+## 3. ✏️ Change project name
 
 Change the following line in `CMakeLists.txt:7` file:
 
@@ -74,7 +74,7 @@ to
 
 to be able to debug your executable.
 
-## Change license
+## 4. ⚖️ Change license
 
 Change your name in the `LICENSE` file:
 
@@ -83,25 +83,25 @@ Copyright (c) 2024 <your_name>
 ```
 
 or change the license to another one. For a list of open source licenses, visit the [open source initiative](https://opensource.org/licenses).
-## Generate project
+## 5. ⚙️ Generate project
 
 ```bash
 cmake . -B .\build\  -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
 ```
 
-## Build project
+## 6. 🏗️ Build project
 
 ```bash
 cmake --build .\build\
 ```
 
-## Run project
+## 7. ▶️ Run project
 
 ```bash
 .\build\bin\YOUR_APP_NAME.exe
 ```
 
-## Adding new source files
+## 8. 📁 Adding new source files
 
 Add the following line in `CMakeLists.txt:24` file:
 
