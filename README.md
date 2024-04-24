@@ -51,7 +51,9 @@ Inside `.vscode/c_cpp_properties.json` file, update the `compilerPath` property 
 
 ## 3. ✏️ Change project name
 
-Change the following line in `CMakeLists.txt:7` file:
+Rename the `cpp_template` directory and the files inside it to `YOUR_APP_NAME`.
+
+Change the following line in `YOUR_APP_NAME/CMakeLists.txt` file:
 
 ```cmake
 project(cpp_template VERSION 0.1.0 LANGUAGES CXX)
@@ -106,16 +108,16 @@ cmake --build .\build\
 
 ## 8. 📁 Adding new source files
 
-Add the following line in `CMakeLists.txt:24` file:
+Add the following line in `YOUR_APP_NAME/CMakeLists.txt:` file:
 
 ```cmake
 target_sources(
   ${PROJECT_NAME}
   PUBLIC
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/main.hpp"
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/YOUR_FILE.hpp" <==
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/YOUR_APP_NAME.hpp"
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/NEW_FILE.hpp" <==
   PRIVATE
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/main.cpp"
-    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/YOUR_FILE.cpp" <==
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/YOUR_APP_NAME.cpp"
+    "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/NEW_FILE.cpp" <==
 )
 ```
