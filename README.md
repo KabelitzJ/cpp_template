@@ -121,3 +121,14 @@ target_sources(
     "${PROJECT_SOURCE_DIR}/${PROJECT_NAME}/NEW_FILE.cpp" <==
 )
 ```
+
+## 9. 📝 Adding tests
+
+Add the following to `tests/tests.cpp` file:
+
+```cpp
+TEST(cpp_template_add, test_name) {
+  EXPECT_EQ(something, something_else);
+  EXPECT_NE(something, something_different);
+}
+```
