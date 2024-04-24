@@ -3,8 +3,6 @@ project(cpp_template VERSION 0.1.0 LANGUAGES CXX)
 add_library(${PROJECT_NAME} STATIC)
 add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
-message(STATUS "${CMAKE_SOURCE_DIR}")
-
 target_sources(
   ${PROJECT_NAME}
   PUBLIC
