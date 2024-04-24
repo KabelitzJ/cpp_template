@@ -17,6 +17,7 @@
 - [6. 🏗️ Build project](#6-️-build-project)
 - [7. ▶️ Run project](#7-️-run-project)
 - [8. 📁 Adding new source files](#8--adding-new-source-files)
+- [9. 📝 Adding tests](#9--adding-tests)
 
 ## 1. 📄 Description
 
