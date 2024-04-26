@@ -1,25 +1,11 @@
-project(tests VERSION 0.1.0 LANGUAGES CXX)
-
-include(FetchContent)
-include(GoogleTest)
-
-FetchContent_Declare(
-  googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG        release-1.12.0
-)
-
-FetchContent_MakeAvailable(googletest)
-
-enable_testing()
+project(demo VERSION 0.1.0 LANGUAGES CXX)
 
 add_executable(${PROJECT_NAME})
-gtest_discover_tests(${PROJECT_NAME})
 
 target_sources(
   ${PROJECT_NAME}
   PRIVATE
-    "${CMAKE_SOURCE_DIR}/${PROJECT_NAME}/tests.cpp"
+    "${CMAKE_SOURCE_DIR}/${PROJECT_NAME}/demo.cpp"
 )
 
 target_include_directories(
@@ -33,7 +19,6 @@ target_link_libraries(
   PRIVATE
     cpp_template::cpp_template
   PUBLIC
-    gtest
 )
 
 set_target_properties(

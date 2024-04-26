@@ -15,9 +15,10 @@
 - [4. ⚖️ Change license](#4-️-change-license)
 - [5. ⚙️ Generate project](#5-️-generate-project)
 - [6. 🏗️ Build project](#6-️-build-project)
-- [7. ▶️ Run project](#7-️-run-project)
-- [8. 📁 Adding new source files](#8--adding-new-source-files)
-- [9. 📝 Adding tests](#9--adding-tests)
+- [7. 🏃‍♂️ Run project](#7-️-run-project)
+- [8. 🏃‍♀️ Run tests](#8--run-tests)
+- [9. 📁 Adding new source files](#8--adding-new-source-files)
+- [10. 📝 Adding new tests](#9--adding-new-tests)
 
 ## 1. 📄 Description
 
@@ -101,10 +102,16 @@ cmake . -B .\build\  -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
 cmake --build .\build\
 ```
 
-## 7. ▶️ Run project
+## 7. 🏃‍♂️ Run project
 
 ```bash
-.\build\bin\YOUR_APP_NAME.exe
+.\build\bin\demo.exe
+```
+
+## 8. 🏃‍♀️ Run tests
+
+```bash
+.\build\bin\tests.exe
 ```
 
 ## 8. 📁 Adding new source files
@@ -123,11 +130,14 @@ target_sources(
 )
 ```
 
-## 9. 📝 Adding tests
+## 9. 📝 Adding new tests
 
 Add the following to `tests/tests.cpp` file:
 
 ```cpp
+// GIVEN: ...
+// WHEN: ...
+// THEN: ...
 TEST(cpp_template_add, test_name) {
   EXPECT_EQ(something, something_else);
   EXPECT_NE(something, something_different);

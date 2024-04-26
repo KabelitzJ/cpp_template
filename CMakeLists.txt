@@ -22,4 +22,5 @@ list(APPEND CMAKE_PREFIX_PATH "${CMAKE_BINARY_DIR}" "${CMAKE_BINARY_DIR}/depende
 set(FETCHCONTENT_BASE_DIR "${CMAKE_BINARY_DIR}/dependencies")
 
 add_subdirectory(cpp_template)
+add_subdirectory(demo)
 add_subdirectory(tests)
