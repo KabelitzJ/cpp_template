@@ -92,8 +92,16 @@ Copyright (c) 2024 <your_name>
 
 ## 5. ⚙️ Generate project
 
+For generating the project on your local windows machine, run the following command:
+
 ```bash
 cmake . -B .\build\  -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug
+```
+
+If you are using `GitHub Codespaces`, run the following command:
+
+```bash
+cmake . -B ./build/  -G "Ninja" -DCMAKE_BUILD_TYPE=Debug
 ```
 
 ## 6. 🏗️ Build project
