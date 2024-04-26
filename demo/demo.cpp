@@ -6,10 +6,6 @@ auto main() -> int {
 
   dummy.set_value(42u);
 
-  if (true) {
-    std::cout << "Value: " << dummy.value() << std::endl;
-  }
-
   std::cout << "Value: " << dummy.value() << std::endl;
 
   return 0;
