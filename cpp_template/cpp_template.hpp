@@ -19,8 +19,8 @@ private:
 
   std::uint32_t _value;
 
-}; // class dummy
+};  // class dummy
 
-} // namespace cpp_template
+}  // namespace cpp_template
 
-#endif // CPP_TEMPLATE_HPP_
+#endif  // CPP_TEMPLATE_HPP_
